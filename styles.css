@@ -1194,7 +1194,7 @@ a.btn-google{
 }
 
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 767px){
 
     html{
         width: 100px;
