@@ -543,330 +543,8 @@ a.btn-google{
   opacity: 1;
 }
 
-@media only screen and (max-width: 1700px) {
-    .image-background{
-        position: relative;
-        width: 120%;
-        left: -10%;
-        overflow: hidden;
-        background: linear-gradient(#172d64, #7f6c90);
-    }
-}
 
-
-@media only screen and (max-width: 1550px) {
- 
-    .app-title{
-        position: absolute;
-        color: #ffffff;
-        white-space: nowrap;
-        height: 15%;
-        left: 39%;
-        top: 20%;
-        animation-name: appear;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-    }
-
-    .card-back{
-        display: flex;
-        width: 95%;
-        height: 69%;
-        border-radius: 30px;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        color: #ffffff;
-        overflow: hidden;
-    }
-
-    
-    .email-form{
-        left: 40%;
-        top: 35%;
-    }
-
-    .image-background{
-        position: relative;
-        width: 150%;
-        left: -50%;
-        overflow: hidden;
-        background: linear-gradient(#172d64, #7f6c90);
-    }
-
-    .gallery-container .eevee{
-        position: absolute;
-        height: 80%;
-        top: 8%;
-        left: 2%;
-    }
-
-    .pokemon-card .download-options .text-list h1{
-        font-size: 300%;
-        margin-right: 10%;
-    }
-    
-    .pokemon-card .download-options .text-list p{
-        font-size: 100%;
-    }
-    
-    .feature-container{
-        background-color: #DFDFDF;
-        width: 100%;
-        height: 1300px;
-        overflow: hidden;
-       
-    }
-
-    .features{
-        padding: 0% 15%;
-        align-items: center;    
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        overflow: auto;
-    }
-
-    .features .feature-item{
-        width: 100%;
-        height: 20%;
-        
-    }
-
-    .search{
-        position: absolute;
-        left: 60%;
-    }
-
-    .teams{
-        position: absolute;
-        top: 750px;
-        left: 15%;
-    }
-
-    .ubication{
-        position: absolute;
-        top: 750px;
-        left: 60%;
-    }
-
-    
-    .feature-title{
-        padding: 3% 0% 4% 0%;
-        text-align: center;
-        width: 100%;
-        text-align: center;
-    }
-
-    .feature-title h1{
-        font-size: 40px;
-        text-align: center;
-    }
-
-    
-    .card-back{
-        display: flex;
-        width: 325px;
-        height: 420px;
-        border-radius: 40px;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        color: #ffffff;
-        overflow: hidden;
-    }
-}
-
-
-@media only screen and (max-width: 1350px) {
-
-    
-    .app-title{
-        position: absolute;
-        color: #ffffff;
-        white-space: nowrap;
-        height: 12%;
-        left: 39%;
-        top: 20%;
-        animation-name: appear;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-    }
-
-    .email-form{
-        position: absolute;
-        top: 32%;
-        width: 30%;
-        color: #ffffff;
-        font-size: 100%;
-        left: 40%;
-    }
-
-    .image-background{
-        position: relative;
-        left: -60%;
-        width: 180%;
-        overflow: hidden;
-        background: linear-gradient(#172d64, #7f6c90);
-    }
-
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .header-container {
-        margin-left: 0;
-        margin-right: 0px;
-        display: flex;
-        padding: 5px 50px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .app-title{
-        position: absolute;
-        color: #ffffff;
-        white-space: nowrap;
-        height: 12%;
-        left: 44%;
-        top: 20%;
-        animation-name: appear;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-    }
-
-    .email-form{
-        position: absolute;
-        top: 32%;
-        width: 30%;
-        color: #ffffff;
-        font-size: 100%;
-        left: 45%;
-    }
-
-    .image-background{
-        position: relative;
-        left: -70%;
-        width: 180%;
-        overflow: hidden;
-        background: linear-gradient(#172d64, #7f6c90);
-    }
-
-}
-
-@media only screen and (max-width: 1100px) {
-
-    .header-container {
-        margin-left: 0;
-        margin-right: 0px;
-        display: flex;
-        padding: 5px 50px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .app-title{
-        position: absolute;
-        color: #ffffff;
-        white-space: nowrap;
-        height: 12%;
-        left: 49%;
-        top: 20%;
-        animation-name: appear;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-    }
-
-    .email-form{
-        position: absolute;
-        top: 32%;
-        width: 30%;
-        color: #ffffff;
-        font-size: 100%;
-        left: 50%;
-    }
-
-    .image-background{
-        position: relative;
-        left: -70%;
-        width: 170%;
-        overflow: hidden;
-        background: linear-gradient(#172d64, #7f6c90);
-    }
-
-    .feature-container{
-        background-color: #DFDFDF;
-        width: 100%;
-        height: 1300px;
-        overflow: hidden;
-       
-    }
-
-    .features{
-        padding: 0% 8%;
-        align-items: center;    
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        overflow: auto;
-    }
-
-    .features .feature-item{
-        width: 100%;
-        height: 20%;
-        
-    }
-
-    .search{
-        position: absolute;
-        left: 50%;
-    }
-
-    .teams{
-        position: absolute;
-        top: 750px;
-        left: 8%;
-    }
-
-    .ubication{
-        position: absolute;
-        top: 750px;
-        left: 50%;
-    }
-
-    
-    .feature-title{
-        padding: 3% 0% 4% 0%;
-        text-align: center;
-        width: 88%;
-        text-align: center;
-    }
-
-    .feature-title h1{
-        font-size: 40px;
-        text-align: center;
-    }
-
-    
-    .card-back{
-        display: flex;
-        width: 325px;
-        height: 420px;
-        border-radius: 40px;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        color: #ffffff;
-        overflow: hidden;
-    }
-
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
 
     .header-container {
         margin-left: 0;
@@ -910,7 +588,7 @@ a.btn-google{
     .gallery-container{
         background-color: #ffffff;
         position: relative;
-        width: 85%;
+        width: 100%;
         height: 700px;
         align-items: center;
         padding-top: 5%;
@@ -940,6 +618,7 @@ a.btn-google{
     
     .pokemon-card .download-options .text-list h1{
         font-size: 300%;
+        width: 90%;
     }
     
     .pokemon-card .download-options .text-list p{
@@ -958,118 +637,140 @@ a.btn-google{
 
     .gallery-container .eevee{
         position: absolute;
-        height: 60%;
-        top: 28%;
+        height: 80%;
+        top: 8%;
         left: 4%;
     }
 
+    .feature-container{
+        background-color: #DFDFDF;
+        width: 100%;
+        height: 1300px;
+        overflow: hidden;
+       
+    }
+
+    .features{
+        padding: 0% 13vw;
+        align-items: center;    
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .features .feature-item{
+        width: 100%;
+        height: 20%;
+        
+    }
+
+    .search{
+        position: absolute;
+        left: 60vw;
+    }
+
+    .teams{
+        position: absolute;
+        top: 750px;
+        left: 13vw;
+    }
+
+    .ubication{
+        position: absolute;
+        top: 750px;
+        left: 60vw;
+    }
+
+    
+    .feature-title{
+        padding: 3% 0% 4% 0%;
+        text-align: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature-title h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    
+    .card-back{
+        display: flex;
+        width: 325px;
+        height: 420px;
+        border-radius: 40px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        color: #ffffff;
+        overflow: hidden;
+    }
 
 }
 
-@media only screen and (max-width: 800px) {
-    .header-container {
-        margin-left: 0;
-        margin-right: 0px;
-        display: flex;
-        padding: 5px 50px;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    .app-title{
-        position: absolute;
-        color: #ffffff;
-        white-space: nowrap;
-        height: 9%;
-        left: 55.5%;
-        top: 20%;
-        animation-name: appear;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-    }
-
-    .email-form{
-        position: absolute;
-        top: 30%;
-        width: 23%;
-        color: #ffffff;
-        font-size: 100%;
-        left: 56%;
-    }
-
-    .image-background{
-        position: relative;
-        width: 200%;
-        left: -110%;
-        overflow: hidden;
-        background: linear-gradient(#172d64, #7f6c90);
-    }
-
-    .gallery-container{
-        background-color: #ffffff;
-        position: relative;
-        width: 770px;
-        height: 700px;
-        align-items: center;
-        padding-top: 5%;
-        padding-bottom: 2%;
-    }
-    
-    .pokemon-card{
-        margin: 2% 2% 5% 5%;
-        border-radius: 30px;
-        background-color: #E3313D;
-        width: 90%;
-        height: 90%;
-    }
-    
-    .pokemon-card .download-options {
-        display: inline-block;  
-        width: 45%;
-        height: 100%;
-        align-items: center;
-        color: #ffffff;
-    }
-    
-    .pokemon-card .download-options .text-list{
-        position: absolute;
-        padding: 2% 5% 0% 3%;
-    }
-    
-    .pokemon-card .download-options .text-list h1{
-        font-size: 300%;
-    }
-    
-    .pokemon-card .download-options .text-list p{
-        font-size: 100%;
-        margin-right: 27px;
-    }
-
-    .pokemon-card .download-options .pokemon-image{
-        border-radius: 30px 0px 0px 30px;
-        background-image: url("https://res.cloudinary.com/kyuri/image/upload/v1646674859/pokemon/back_qdkbf2.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100%;
-    }
-
+@media only screen and (max-width: 1200px) {
     .gallery-container .eevee{
         position: absolute;
-        height: 60%;
-        top: 28%;
-        left: 0%;
+        height: 70%;
+        top: 18%;
+        left: 2%;
     }
 
+    .features{
+        padding: 0% 10vw;
+        align-items: center;    
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .features .feature-item{
+        width: 100%;
+        height: 20%;
+        
+    }
+
+    .search{
+        position: absolute;
+        left: 55vw;
+    }
+
+    .teams{
+        position: absolute;
+        top: 750px;
+        left: 10vw;
+    }
+
+    .ubication{
+        position: absolute;
+        top: 750px;
+        left: 55vw;
+    }
+
+    .feature-title{
+        padding: 3% 0% 4% 0%;
+        text-align: center;
+        width: 100vw;
+        text-align: center;
+    }
 }
 
+@media only screen and (max-width: 950px) {
+    .gallery-container .eevee{
+        position: absolute;
+        height: 70%;
+        top: 18%;
+        left: 2%;
+    }
 
-@media only screen and (max-width: 790px){
     .gallery-container{
         background-color: #ffffff;
         position: relative;
-        width: 490px;
+        width: 100vw;
         height: 700px;
         align-items: center;
         padding-top: 5%;
@@ -1080,7 +781,7 @@ a.btn-google{
         margin: auto;
         border-radius: 30px;
         background-color: #E3313D;
-        width: 90%;
+        width: 80%;
         height: 90%;
     }
     
@@ -1118,7 +819,78 @@ a.btn-google{
         position: absolute;
         height: 50%;
         top: -6.5%;
-        left: 18%;
+        left: 30%;
+    }
+
+    .gallery-container .eevee{
+        position: absolute;
+        height: 70%;
+        top: 18%;
+        left: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+
+    html{
+        width: 100px;
+    }
+
+
+    .gallery-container{
+        background-color: #ffffff;
+        position: relative;
+        width: 100vw;
+        height: 700px;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+    
+    .pokemon-card{
+        margin: auto;
+        border-radius: 30px;
+        background-color: #E3313D;
+        width: 80vw;
+        height: 90%;
+    }
+    
+    .pokemon-card .download-options {
+        display: inline-block;  
+        width: 100%;
+        height: 45%;
+        align-items: center;
+        color: #ffffff;
+    }
+    
+    .pokemon-card .download-options .text-list{
+        position: absolute;
+        padding: 2% 5% 0% 3%;
+    }
+    
+    .pokemon-card .download-options .text-list h1{
+        font-size: 200%;
+    }
+    
+    .pokemon-card .download-options .text-list p{
+        font-size: 80%;
+    }
+
+    .pokemon-card .download-options .pokemon-image{
+        border-radius: 30px 30px 0px 0px;
+        background-image: url("https://res.cloudinary.com/kyuri/image/upload/v1646674859/pokemon/back_qdkbf2.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-container .eevee{
+        position: absolute;
+        height: 50%;
+        top: -6.5%;
+        left: 22%;
     }
 
     .feature-container{
@@ -1130,7 +902,7 @@ a.btn-google{
     }
 
     .features{
-        padding: 0% 9%;
+        padding: 0% 22vw;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -1140,33 +912,33 @@ a.btn-google{
 
     .features .feature-item{
         width: 100%;
-        height: 20%;
-        
+        height: 5%;
+        margin: auto;
     }
 
     .search{
         position: absolute;
         top: 750px;
-        left: 86px;
+        left: 22vw;
     }
 
     .teams{
         position: absolute;
         top: 1225px;
-        left: 86px;
+        left: 22vw;
     }
 
     .ubication{
         position: absolute;
         top: 1700px;
-        left: 86px;
+        left: 22vw;
     }
 
     
     .feature-title{
-        padding: 3% 0% 4% 0%;
+        padding: 3% 0% 5% 0%;
         text-align: center;
-        width: 50%;
+        width: 100vw;
         text-align: center;
     }
 
@@ -1176,7 +948,7 @@ a.btn-google{
     }
 
     .feature-title p{
-        font-size: 18px;
+        font-size: 15px;
     }
     
     .card-back{
@@ -1190,11 +962,41 @@ a.btn-google{
         color: #ffffff;
         overflow: hidden;
     }
+
+    .app-title{
+        position: absolute;
+        color: #ffffff;
+        white-space: nowrap;
+        height: 7%;
+        left: 55.5%;
+        top: 20%;
+        animation-name: appear;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .email-form{
+        position: absolute;
+        top: 30%;
+        width: 18%;
+        color: #ffffff;
+        font-size: 100%;
+        left: 56%;
+    }
+
+    .image-background{
+        position: relative;
+        width: 220%;
+        left: -120%;
+        overflow: hidden;
+        background: linear-gradient(#172d64, #7f6c90);
+    }
     
 }
 
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 450px){
 
     html{
         width: 100px;
@@ -1204,7 +1006,7 @@ a.btn-google{
     .gallery-container{
         background-color: #ffffff;
         position: relative;
-        width: 400px;
+        width: 410px;
         height: 700px;
         align-items: center;
         padding-top: 5%;
