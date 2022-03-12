@@ -1192,3 +1192,162 @@ a.btn-google{
     }
     
 }
+
+
+@media only screen and (max-width: 720px){
+    .gallery-container{
+        background-color: #ffffff;
+        position: relative;
+        width: 400px;
+        height: 700px;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+    
+    .pokemon-card{
+        margin: auto;
+        border-radius: 30px;
+        background-color: #E3313D;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .pokemon-card .download-options {
+        display: inline-block;  
+        width: 100%;
+        height: 45%;
+        align-items: center;
+        color: #ffffff;
+    }
+    
+    .pokemon-card .download-options .text-list{
+        position: absolute;
+        padding: 2% 5% 0% 3%;
+    }
+    
+    .pokemon-card .download-options .text-list h1{
+        font-size: 200%;
+    }
+    
+    .pokemon-card .download-options .text-list p{
+        font-size: 80%;
+    }
+
+    .pokemon-card .download-options .pokemon-image{
+        border-radius: 30px 30px 0px 0px;
+        background-image: url("https://res.cloudinary.com/kyuri/image/upload/v1646674859/pokemon/back_qdkbf2.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-container .eevee{
+        position: absolute;
+        height: 50%;
+        top: -6.5%;
+        left: 10%;
+    }
+
+    .feature-container{
+        background-color: #DFDFDF;
+        width: 100%;
+        height: 2200px;
+        overflow: hidden;
+       
+    }
+
+    .features{
+        padding: 0% 4%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .features .feature-item{
+        width: 100%;
+        height: 5%;
+        
+    }
+
+    .search{
+        position: absolute;
+        top: 750px;
+        left: 40px;
+    }
+
+    .teams{
+        position: absolute;
+        top: 1225px;
+        left: 40px;
+    }
+
+    .ubication{
+        position: absolute;
+        top: 1700px;
+        left: 40px;
+    }
+
+    
+    .feature-title{
+        padding: 3% 0% 5% 0%;
+        text-align: center;
+        width: 45%;
+        text-align: center;
+    }
+
+    .feature-title h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .feature-title p{
+        font-size: 15px;
+    }
+    
+    .card-back{
+        display: flex;
+        width: 325px;
+        height: 420px;
+        border-radius: 40px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        color: #ffffff;
+        overflow: hidden;
+    }
+
+    .app-title{
+        position: absolute;
+        color: #ffffff;
+        white-space: nowrap;
+        height: 7%;
+        left: 55.5%;
+        top: 20%;
+        animation-name: appear;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .email-form{
+        position: absolute;
+        top: 30%;
+        width: 18%;
+        color: #ffffff;
+        font-size: 100%;
+        left: 56%;
+    }
+
+    .image-background{
+        position: relative;
+        width: 220%;
+        left: -120%;
+        overflow: hidden;
+        background: linear-gradient(#172d64, #7f6c90);
+    }
+    
+}
