@@ -1,5 +1,5 @@
 body{
-    min-width: 100vh;
+    min-width: 100vw;
     font-family: Lato, Helvetica, sans-serif;
     margin: 0;
 }
@@ -9,45 +9,79 @@ html{
     overflow-x: hidden;
 }
 
-.header{
+header{
     background-color: #E3313D;
-    width: 100%;
+    width: 100vw;
+    padding: 0.5vh 0vw;
 }
 
-.header-container {
-	margin-left: 0;
-	margin-right: 0px;
-	display: flex;
-    padding: 5px 250px;
-	justify-content: space-between;
-	align-items: center;
+#check{
+    display: none;
 }
 
-.navigation ul{
+.navigation {
+    display: flex;
+    flex-direction: row;
+    margin: 0vh 10vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation label{
+    display: none;
+}
+
+.navigation .nav-menu{
+    position: relative;
+    display: flex;
     margin: 0;
-	margin-left: 40px;
-	padding: 0;
-	list-style: none;
 }
 
-.navigation ul li {
+.navigation .nav-menu li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 0px;
 }
 
-.navigation ul li a{
+.navigation ul .option a{
+    display: block;
+    padding: 1.5vh 1.5vw;
+    font-size: 13px;
     text-decoration: none;
     color: aliceblue;
+}  
+
+.navigation ul .download{
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #E3313D;
+}  
+
+.navigation ul .download a{
+    display: block;
+    padding: 1.5vh 1.5vw;
+    font-size: 13px;
+    text-decoration: none;
+    color: #E3313D;
+    font-weight: 600;
+}  
+
+.navigation ul li:hover{
+    align-content: center;
+    background-color: #9c2b32;
+    border-radius: 15px;
 }
 
-.navigation ul li a:hover{
-    color: #023365;
+.navigation ul .download:hover{
+    align-content: center;
+    background-color: #DFDFDF;
+    border-radius: 15px;
 }
 
 .image-background{
     position: relative;
-    width: 100%;
+    width: 2150px;
     height: 910px;
+    left: -8%;
     overflow: hidden;
     background: linear-gradient(#172d64, #7f6c90);
 }
@@ -167,25 +201,25 @@ input[type=submit]:hover {
     border-radius: 40px;
     flex-direction: column;
     padding: 50px 10px;
-    
     text-align: center;
-    justify-content: space-between;
     align-items: center;
     color: #ffffff;
     transform: perspective(600px) rotateY(0deg);
 }
 
+.features .feature-item .front .group-front{
+    height: 100%;
+    padding-top: 8vh;
+    justify-content: space-between;
+}
+
 .features .feature-item .front img{
-    height: 40%;
-    max-width: 60%;
+    height: 30%;
+    max-width: 50%;
 }
 
 .features .feature-item .front h3{
-    font-size: 20px;
-}
-
-.features .feature-item .front p{
-    font-size: 13px;
+    font-size: 18px;
 }
 
 .features .feature-item .back{
@@ -243,12 +277,32 @@ input[type=submit]:hover {
 }
 
 .footer{
-    width: 100%;
+    width: 100vw;
     background-color: #000000;
 }
 
 .footer .footer-container{
-    padding: 5% 20%;
+    padding: 8vh 0vw;
+    margin: auto;
+    width: 80%;
+}
+
+.bottom-option-container{
+    color: #a7aeaf;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    font-family: 'Gotham Light', sans-serif;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.top-option-container{
+    width: 90%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo-footer{
@@ -256,10 +310,9 @@ input[type=submit]:hover {
 }
 
 .options-container{
-    padding: 0px 0px;
+    padding: auto;
     vertical-align: top;
     color: #FFF;
-    margin: 0;
     font-family: 'Gotham', sans-serif;
 }
 
@@ -287,10 +340,17 @@ input[type=submit]:hover {
     margin-bottom: 10px;
 }
 
+.options-container .list-container .list-column .list-options li .list-option {
+    text-decoration: none;
+    color: #879496;
+}
+
+
 .options-container .list-container .list-column .list-options li .list-option:hover {
     cursor: pointer;
     color: #E3313D;
 }
+
 
 .options-container .social-networks{
     padding-left: 0px;
@@ -324,21 +384,15 @@ input[type=submit]:hover {
     color: #E3313D;
 }
 
-.bottom-option-container{
-    color: #a7aeaf;
-    font-family: 'Gotham Light', sans-serif;
-    font-size: 12px;
-    justify-content: space-between;
-}
-
 .bottom-option-container .bottom-option{
     display: inline-block;
 }
 
-.top-option-container{
-    padding-bottom: 5%;
-    justify-content: space-between;
+.bottom-option-container .bottom-option .bottom-option-list{
+    vertical-align: bottom;
+    margin-left: 3vw;
 }
+
 
 .bottom-option-container .bottom-option .bottom-option-list li{
     display: inline-block;
@@ -560,7 +614,7 @@ a.btn-google{
         color: #ffffff;
         white-space: nowrap;
         height: 12%;
-        left: 49%;
+        left: 26%;
         top: 20%;
         animation-name: appear;
         animation-duration: 2s;
@@ -574,13 +628,12 @@ a.btn-google{
         width: 30%;
         color: #ffffff;
         font-size: 100%;
-        left: 50%;
+        left: 27%;
     }
 
     .image-background{
         position: relative;
-        left: -80%;
-        width: 180%;
+        left: -30%;
         overflow: hidden;
         background: linear-gradient(#172d64, #7f6c90);
     }
@@ -712,6 +765,37 @@ a.btn-google{
 
 
 @media only screen and (max-width: 1200px) {
+
+    .image-background{
+        position: relative;
+        left: -80%;
+        overflow: hidden;
+        background: linear-gradient(#172d64, #7f6c90);
+    }
+
+    .app-title{
+        position: absolute;
+        color: #ffffff;
+        white-space: nowrap;
+        height: 10%;
+        left: 45.5%;
+        top: 20%;
+        animation-name: appear;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .email-form{
+        position: absolute;
+        top: 30%;
+        width: 50vh;
+        color: #ffffff;
+        font-size: 100%;
+        left: 46%;
+    }
+
+
     .gallery-container .eevee{
         position: absolute;
         height: 70%;
@@ -760,6 +844,36 @@ a.btn-google{
 }
 
 @media only screen and (max-width: 950px) {
+
+    .image-background{
+        position: relative;
+        left: -110%;
+        overflow: hidden;
+        background: linear-gradient(#172d64, #7f6c90);
+    }
+
+    .app-title{
+        position: absolute;
+        color: #ffffff;
+        white-space: nowrap;
+        height: 10%;
+        left: 52.5%;
+        top: 20%;
+        animation-name: appear;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .email-form{
+        position: absolute;
+        top: 30%;
+        width: 50vh;
+        color: #ffffff;
+        font-size: 100%;
+        left: 53%;
+    }
+
     .gallery-container .eevee{
         position: absolute;
         height: 70%;
@@ -822,19 +936,236 @@ a.btn-google{
         left: 30%;
     }
 
-    .gallery-container .eevee{
+}
+
+@media only screen and (max-width: 880px) {
+    .footer .footer-container{
+        padding: 8vh 0vw;
+        margin: auto;
+        width: 80%;
+    }
+    
+    .bottom-option-container{
+        color: #a7aeaf;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Gotham Light', sans-serif;
+        font-size: 12px;
+        justify-content: space-between;
+        margin-left: -0vw;
+    }
+    
+    .top-option-container{
+        width: 100%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: -0vw;
+    }
+    
+    .options-container{
+        padding: 0px 0px;
+        vertical-align: top;
+        color: #FFF;
+        margin: 0;
+        font-family: 'Gotham', sans-serif;
+    }
+    
+    .options-container .list-container{
+        margin-left: -12vw;
+    }
+    
+    .options-container .list-container .list-column{
+        display: inline-block;
+        vertical-align: top;
+        padding: 8px 10px;
+        align-content: space-between;
+    }
+    
+    .options-container .list-container .list-column li {
+        display: block;
+        padding: 12px 10px;
+        color: #FFF;
+        text-decoration: none;
+        font-size: 14px;
+        
+    }
+    
+    .options-container .list-container .list-column li .list-options-title {
+        color: #879496;
+        margin-bottom: 10px;
+    }
+    
+    .options-container .list-container .list-column .list-options li .list-option {
+        text-decoration: none;
+        color: #879496;
+    }
+    
+    
+    .options-container .list-container .list-column .list-options li .list-option:hover {
+        cursor: pointer;
+        color: #E3313D;
+    }
+    
+    
+    .options-container .social-networks{
+        padding-left: 0px;
+    }   
+    
+    .options-container .social-network{
+        display: inline-block;
+        padding: 0px 10px;
+    }
+    
+    .social-network-item{
+        display: table-cell;
+        padding: 5px 2px 0px 2px;
+        background-color: #222326;
+        border-radius: 100%;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+    
+    }
+    
+    .options-container .social-network i{
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .options-container .social-network i:hover{
+        cursor: pointer;
+        color: #E3313D;
+    }
+    
+    .bottom-option-container .bottom-option{
+        display: inline-block;
+        justify-content: center;
+    }
+    
+    .bottom-option-container .bottom-option .bottom-option-list{
+        vertical-align: bottom;
+        padding: auto;
+        text-align: center;
+        margin-left: 0vw;
+    }
+    
+    
+    .bottom-option-container .bottom-option .bottom-option-list li{
+        display: inline-block;
+        padding: 15px 10px;
+    }
+    
+    .bottom-option-container .bottom-option .bottom-option-list li a {
+        display: block;
+        padding: auto;
+        text-decoration: none;
+    }
+    
+    .bottom-option-container .bottom-option .bottom-option-list li a:hover {
+        cursor: pointer;
+        color: #E3313D;
+    }
+    
+    .bottom-option .final-options{
+        text-align: end;
+    }
+    
+    .country:hover{
+        cursor: pointer;
+        color: #E3313D;
+    }
+    
+    .bottom-option .final-options li{
+        display: block;
+        padding: 8px 0px;
+        text-decoration: none;
+    }
+    
+}
+
+@media only screen and (max-width: 860px){
+    .app-title{
         position: absolute;
-        height: 70%;
-        top: 18%;
-        left: 2%;
+        color: #ffffff;
+        white-space: nowrap;
+        height: 10%;
+        left: 44.5%;
+        top: 20%;
+        animation-name: appear;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
     }
 
+    .email-form{
+        position: absolute;
+        top: 30%;
+        width: 50vh;
+        color: #ffffff;
+        font-size: 100%;
+        left: 45%;
+    }
+ 
 }
 
 @media only screen and (max-width: 767px){
 
     html{
         width: 100px;
+    }
+
+    .navigation label{
+        display: block;
+    }
+
+    .navigation .nav-menu{
+        position: absolute;
+        background-color: #E3313D;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        top: 5.6vh;
+        height: 30vh;
+        width: 100%;
+        opacity: 0;;
+        transition: all 1s;
+        margin-left: -15.5vw;
+        padding-right: 25vw;
+    }
+
+    .navigation .nav-menu li {
+        display: inline-block;
+        padding: 20px 0px;
+    }
+
+    .navigation ul .download{
+        background-color: #ffffff;
+        border-radius: 15px;
+        color: #E3313D;
+    }  
+    
+    .navigation ul .download a{
+        display: block;
+        padding: 0.5vh 0.5vw;
+        font-size: 13px;
+        text-decoration: none;
+        color: #E3313D;
+        font-weight: 600;
+    }  
+    
+
+    #check:checked ~ .nav-menu{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #check:checked ~ .navigation{
+        height: 100vh;
+        
     }
 
 
@@ -889,7 +1220,7 @@ a.btn-google{
     .gallery-container .eevee{
         position: absolute;
         height: 50%;
-        top: -6.5%;
+        top: -7.5%;
         left: 22%;
     }
 
@@ -902,7 +1233,7 @@ a.btn-google{
     }
 
     .features{
-        padding: 0% 22vw;
+        padding: 0% 25vw;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -919,26 +1250,26 @@ a.btn-google{
     .search{
         position: absolute;
         top: 750px;
-        left: 22vw;
+        left: 25vw;
     }
 
     .teams{
         position: absolute;
         top: 1225px;
-        left: 22vw;
+        left: 25vw;
     }
 
     .ubication{
         position: absolute;
         top: 1700px;
-        left: 22vw;
+        left: 25vw;
     }
 
     
     .feature-title{
         padding: 3% 0% 5% 0%;
         text-align: center;
-        width: 100vw;
+        width: 95vw;
         text-align: center;
     }
 
@@ -968,7 +1299,7 @@ a.btn-google{
         color: #ffffff;
         white-space: nowrap;
         height: 7%;
-        left: 55.5%;
+        left: 159vw;
         top: 20%;
         animation-name: appear;
         animation-duration: 2s;
@@ -982,17 +1313,96 @@ a.btn-google{
         width: 18%;
         color: #ffffff;
         font-size: 100%;
-        left: 56%;
+        left: 160vw;
     }
 
     .image-background{
         position: relative;
-        width: 220%;
-        left: -120%;
+        left: -150%;
         overflow: hidden;
         background: linear-gradient(#172d64, #7f6c90);
     }
     
+}
+
+@media only screen and (max-width: 610px) {
+    .navigation .nav-menu{
+        position: absolute;
+        background-color: #E3313D;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        top: 5.6vh;
+        height: 30vh;
+        width: 100%;
+        opacity: 0;;
+        transition: all 1s;
+        margin-left: -18vw;
+        padding-right: 25vw;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .gallery-container .eevee{
+        left: 20%;
+    }
+
+    .features{
+        padding: 0% 18vw;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .search{
+        position: absolute;
+        top: 750px;
+        left: 18vw;
+    }
+
+    .teams{
+        position: absolute;
+        top: 1225px;
+        left: 18vw;
+    }
+
+    .ubication{
+        position: absolute;
+        top: 1700px;
+        left: 18vw;
+    }
+
+    .image-background{
+        position: relative;
+        left: -210vw;
+        overflow: hidden;
+        background: linear-gradient(#172d64, #7f6c90);
+    }
+
+    .app-title{
+        position: absolute;
+        color: #ffffff;
+        white-space: nowrap;
+        height: 7%;
+        left: 219vw;
+        top: 20%;
+        animation-name: appear;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .email-form{
+        position: absolute;
+        top: 30%;
+        width: 18%;
+        color: #ffffff;
+        font-size: 100%;
+        left: 220vw;
+    }
 }
 
 
@@ -1067,7 +1477,7 @@ a.btn-google{
     }
 
     .features{
-        padding: 0% 4%;
+        padding-left: 10%;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -1103,7 +1513,7 @@ a.btn-google{
     .feature-title{
         padding: 3% 0% 5% 0%;
         text-align: center;
-        width: 45%;
+        width: 100%;
         text-align: center;
     }
 
@@ -1114,6 +1524,7 @@ a.btn-google{
 
     .feature-title p{
         font-size: 15px;
+        width: 95%;
     }
     
     .card-back{
@@ -1133,7 +1544,7 @@ a.btn-google{
         color: #ffffff;
         white-space: nowrap;
         height: 7%;
-        left: 55.5%;
+        left: 254vw;
         top: 20%;
         animation-name: appear;
         animation-duration: 2s;
@@ -1144,16 +1555,15 @@ a.btn-google{
     .email-form{
         position: absolute;
         top: 30%;
-        width: 18%;
+        width: 16%;
         color: #ffffff;
         font-size: 100%;
-        left: 56%;
+        left: 255vw;
     }
 
     .image-background{
         position: relative;
-        width: 220%;
-        left: -120%;
+        left: -250%;
         overflow: hidden;
         background: linear-gradient(#172d64, #7f6c90);
     }

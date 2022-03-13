@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <title>Pokemon</title>
  </head>
 
  <body>
-	<header class="header">
-        <div class="header-container">
-            <img src="assets/pokeball_logo.png" width="70">
-            <nav class="navigation">
-               <ul>
-                   <li>
-                        <a href="#" >Contacto</a>
-                   </li>
-                   <li>
-                        <a href="#features" >Sobre</a>
-                   </li>
-                   <li>
-                        <a href="#gallery-container" >Descarga</a>
-                   </li>
-               </ul>
-            </nav>
-        </div>	
+	<header>
+        <nav class="navigation">
+            <img class="logo" src="assets/pokeball_logo.png" width="70">
+            <input type="checkbox" id="check"> 
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li class="option">
+                    <a href="#features" >SOBRE</a>
+                </li>
+                <li class="option">
+                    <a href="#" >CONTACTO</a>
+                </li>
+                <li class="option download">
+                    <a href="#gallery-container" >DESCARGAR AHORA</a>
+                </li>
+            </ul>
+        </nav>	
 	</header>
 
     <section  class="image-background">
@@ -43,6 +46,7 @@
             </form>
           </div>
     </section>
+ 
 
     <section id="features" class="feature-container reveal">
         <div class="feature-title">
@@ -52,8 +56,10 @@
         <div class="features">
             <div class="feature-item info">
                 <div class="face front">
-                    <img src="https://res.cloudinary.com/kyuri/image/upload/v1646584186/pokemon/info_weeyep.png">
-                    <h3>Encuentra información completa sobre pokemons</h3>
+                    <div class="group-front">
+                        <img src="https://res.cloudinary.com/kyuri/image/upload/v1646584186/pokemon/info_weeyep.png">
+                        <h3>Encuentra información completa sobre pokemons</h3>
+                    </div>
                 </div>
                 <div class="face back">
                     <div class="card-back red">
@@ -66,8 +72,10 @@
             </div>
             <div class="feature-item search">
                 <div class="face front">
-                    <img src="https://res.cloudinary.com/kyuri/image/upload/v1646584186/pokemon/search_nswywo.png" >
-                    <h3>Busca pokemons de nuevas regiones</h3>
+                    <div class="group-front">
+                        <img src="https://res.cloudinary.com/kyuri/image/upload/v1646584186/pokemon/search_nswywo.png" >
+                        <h3>Busca pokemons de nuevas regiones</h3>
+                    </div>
                 </div>
                 <div class="face back">
                     <div class="card-back gray">
@@ -80,8 +88,10 @@
             </div>
             <div class="feature-item teams">
                 <div class="face front">
-                    <img src="https://res.cloudinary.com/kyuri/image/upload/v1646584186/pokemon/group_gi70s8.png" >
-                    <h3>Arma tus equipos pokemon para competir</h3>
+                    <div class="group-front">
+                        <img src="https://res.cloudinary.com/kyuri/image/upload/v1646584186/pokemon/group_gi70s8.png" >
+                        <h3>Arma tus equipos pokemon para competir</h3>
+                    </div>
                 </div>
                 <div class="face back">
                     <div class="card-back red">
@@ -94,8 +104,10 @@
             </div>
             <div class="feature-item ubication">
                 <div class="face front">
-                    <img src="https://res.cloudinary.com/kyuri/image/upload/v1646584186/pokemon/location_felnbz.png" >
-                    <h3>Descubre ubicaciones del mundo Pokemon</h3>
+                    <div class="group-front">
+                        <img src="https://res.cloudinary.com/kyuri/image/upload/v1646584186/pokemon/location_felnbz.png" >
+                        <h3>Descubre ubicaciones del mundo Pokemon</h3>
+                    </div>
                 </div>
                 <div class="face back">
                     <div class="card-back gray">
@@ -164,17 +176,17 @@
 
  <footer class="footer">
     <section class="footer-container">
+        <section class="logo-container">
+            <img class="logo-footer" src="https://res.cloudinary.com/kyuri/image/upload/v1647039506/pokemon/logo_white_xihtv9.png">
+        </section>
         <section class="top-option-container">
-            <section class="options-container">
-                <img class="logo-footer" src="https://res.cloudinary.com/kyuri/image/upload/v1647039506/pokemon/logo_white_xihtv9.png">
-            </section>
             <section class="options-container">
                 <ul class="list-container">
                     <li class="list-column">
                         <ul class="list-options">
                             <li><a class="list-options-title">CREDITOS</a></li>
-                            <li><a class="list-option">PokeApi</a></li>
-                            <li><a class="list-option">Serebii</a></li>
+                            <li><a href="https://pokeapi.co/" class="list-option">PokeApi</a></li>
+                            <li><a href="https://serebii.net/" class="list-option">Serebii</a></li>
                             <li><a class="list-option">Publicidad</a></li>
                         </ul>
                     </li>
@@ -213,8 +225,7 @@
                     <li><a>Legal</a></li>
                     <li><a>Centro de privacidad</a></li>
                     <li><a>Política de Privacidad</a></li>
-                    <li><a>Cookies</a></li>
-                    <li><a>Sobre los anuncios</a></li>
+                    <li><a>Cookies</a></li> 
                 </ul>
             </div>
             <div class="bottom-option">
